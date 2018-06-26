@@ -28,3 +28,11 @@ like this:
 instead of have all the test starting with the prefix 'test' we can use annotation like this:  /** @test */
 then we dont need to have the test prefix in the beginning of each test name.
 ** PSR-2 is the coding standard convention for php coding. link: https://www.php-fig.org/psr/psr-2/
+-------------------------------
+part 3:
+we can count objects in an array with count() method. for example if we want to test if the count of
+products array objects are equal to what we expact we can say; 
+$this->assertEquals(2,count($order->product()));
+but also we can use;  $this->assertCount(2,$order->products);
+- sometimes we need just one method of one of the test files :
+we say : vendor/bin/phpunit --filter <test_method_name>

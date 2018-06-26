@@ -18,8 +18,8 @@ Route::get('/', function () {
 Route::get('/feedback', function () {
     return "you have been clicked me";
 });
-
-Route::get('/products', function () {
-    $price = Product;
-    return view('products',compact('price'));
-});
+//
+// Route::get('/products', function () {
+//     $price = Product;
+//     return view('products',compact('price'));
+// });
